@@ -5,7 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- tailwind css  -->
     <link rel="stylesheet" href="./css/output.css" />
+    <!-- remix icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+      integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Banking Website</title>
   </head>
-  <body></body>
+  <body class="bg-color-primary text-color-white">
+    <!-- header section start  -->
+    <header>
+      <nav class="container flex justify-between items-center">
+        <div
+          class="py-5 text-color-secondary font-bold text-3xl font-lobster tracking-wider"
+        >
+          <a href="#home">
+            <span class="text-color-white">Light</span> Code.
+          </a>
+        </div>
+        <div>
+          <ul
+            class="hidden lg:flex items-center space-x-6 font-jost text-lg tracking-wider"
+          >
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#Features">Features</a></li>
+            <li><a class="nav-link" href="#Testimonial">Testimonial</a></li>
+            <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#Blog">Blog</a></li>
+            <li><a class="nav-link" href="#Contact">Contact</a></li>
+            <li>
+              <button class="btn">Free trail</button>
+            </li>
+          </ul>
+        </div>
+        <!-- mobile device  -->
+        <div class="lg:hidden cursor-pointer z-50 text-2xl" id="hamburger">
+          <i class="ri-menu-3-line hamburgerIcon"></i>
+        </div>
+        <div
+          id="menu"
+          class="hidden transition-all duration-300 bg-color-primary-dark h-[100vh] absolute inset-0"
+        >
+          <ul class="h-full grid place-items-center space-y-8 py-20 text-xl">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#Features">Features</a></li>
+            <li><a class="nav-link" href="#Testimonial">Testimonial</a></li>
+            <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#Blog">Blog</a></li>
+            <li><a class="nav-link" href="#Contact">Contact</a></li>
+            <li>
+              <button class="btn">Free trail</button>
+            </li>
+          </ul>
+        </div>
+        <!-- mobile device end  -->
+      </nav>
+    </header>
+    <!-- header section end  -->
+    <!-- main section start  -->
+    <main></main>
+    <!-- main section end  -->
+
+    <!-- script section  -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

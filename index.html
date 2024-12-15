@@ -17,8 +17,8 @@
   </head>
   <body class="bg-color-primary text-color-white">
     <!-- header section start  -->
-    <header>
-      <nav class="container fixed z-50 flex justify-between items-center">
+    <header class="bg-color-primary-dark">
+      <nav class="container z-50 flex justify-between items-center">
         <div
           class="py-5 text-color-secondary font-bold text-3xl font-lobster tracking-wider"
         >
@@ -42,28 +42,30 @@
           </ul>
         </div>
         <!-- mobile device  -->
-        <div
-          class="lg:hidden overflow-hidden z-50 cursor-pointer relative text-2xl"
-          id="hamburger"
-        >
-          <i class="ri-menu-3-line hamburgerIcon"></i>
-        </div>
-        <div
-          id="menu"
-          class="hidden transition-all duration-300 bg-color-primary-dark h-[100vh] absolute inset-0"
-        >
-          <ul class="h-full grid place-items-center space-y-8 py-20 text-xl">
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#Features">Features</a></li>
-            <li><a class="nav-link" href="#Testimonial">Testimonial</a></li>
-            <li><a class="nav-link" href="#Pricing">Pricing</a></li>
-            <li><a class="nav-link" href="#Blog">Blog</a></li>
-            <li><a class="nav-link" href="#Contact">Contact</a></li>
-            <li>
-              <button class="btn">Free trail</button>
-            </li>
-          </ul>
-        </div>
+        <!-- <div>
+          <div
+            class="lg:hidden overflow-hidden z-50 cursor-pointer relative text-2xl"
+            id="hamburger"
+          >
+            <i class="ri-menu-3-line hamburgerIcon"></i>
+          </div>
+          <div
+            id="menu"
+            class="hidden transition-all duration-300 bg-color-primary-dark h-[100vh] absolute inset-0"
+          >
+            <ul class="h-full grid place-items-center space-y-8 py-20 text-xl">
+              <li><a class="nav-link" href="#home">Home</a></li>
+              <li><a class="nav-link" href="#Features">Features</a></li>
+              <li><a class="nav-link" href="#Testimonial">Testimonial</a></li>
+              <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+              <li><a class="nav-link" href="#Blog">Blog</a></li>
+              <li><a class="nav-link" href="#Contact">Contact</a></li>
+              <li>
+                <button class="btn">Free trail</button>
+              </li>
+            </ul>
+          </div>
+        </div> -->
         <!-- mobile device end  -->
       </nav>
     </header>
@@ -141,6 +143,87 @@
         </div>
       </section>
       <!-- features section start end  -->
+
+      <!-- saving money section start  -->
+      <section id="savingMoney " class="relative">
+        <div class="blab bg-color-blob top-10 left-12"></div>
+        <div class="blab bg-color-secondary bottom-32 right-12"></div>
+        <div class="container py-20 relative">
+          <div class="flex flex-col items-center justify-between md:flex-row">
+            <div class="mb-12 md:w-1/2">
+              <img src="./img/hero3.png" alt="" />
+            </div>
+            <div class="text-center md:text-start md:w-1/2 md:ml-20">
+              <h4
+                class="font-bold text-color-secondary mb-4 text-xl md:text-2xl"
+              >
+                Saving Money
+              </h4>
+              <p class="title mb-4">Best Financial App To Saving Money</p>
+              <p class="leading-relaxed mb-10">
+                Best financing app ever in the world. Easy to use and very user
+                friendly for mobile banking. You can control your card easily
+                and send money some one just one click
+              </p>
+              <button class="btn">Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- saving money section end  -->
+      <!-- how it works section start  -->
+      <section id="how-it-works" class="relative bg-color-primary-light">
+        <div class="container py-20">
+          <div class="text-center mx-auto mb-20 md:w-1/2">
+            <h4 class="font-bold text-color-secondary mb-4 text-xl md:text-2xl">
+              How it works
+            </h4>
+            <p class="title mb-4">Grow Up Your Money Saving</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- card 1  -->
+            <div class="text-center cursor-pointer">
+              <div
+                class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200"
+              >
+                <p class="text-6xl">1</p>
+              </div>
+              <h3 class="card-title">Install The App</h3>
+              <p class="leading-relaxed font-lobster tracking-widest">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+            <!-- card 2  -->
+            <div class="text-center cursor-pointer">
+              <div
+                class="relative inline-block px-6 py-3 rounded-lg cursor-pointer bg-color-secondary ease-in duration-200"
+              >
+                <p class="text-6xl savingCard-number">2</p>
+              </div>
+              <h3 class="card-title">Setup your Profile</h3>
+              <p class="leading-relaxed font-lobster tracking-widest">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+            <!-- card 3  -->
+            <div class="text-center cursor-pointer">
+              <div
+                class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200"
+              >
+                <p class="text-6xl">3</p>
+              </div>
+              <h3 class="card-title">Enjoy The Features</h3>
+              <p class="leading-relaxed font-lobster tracking-widest">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- how it works section end -->
     </main>
     <!-- main section end  -->
 

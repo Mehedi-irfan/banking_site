@@ -9,6 +9,19 @@
 .btn {
   @apply bg-color-secondary capitalize py-2 px-7 font-jost hover:opacity-80 ease-in rounded-md duration-300;
 }
-.blub {
+.blab {
   @apply w-80 h-80 opacity-30 blur-3xl overflow-hidden absolute  -z-10 rounded-full;
+}
+.title {
+  @apply text-3xl md:text-5xl font-bold leading-snug font-jost mb-6;
+}
+
+.card {
+  @apply border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200;
+}
+.card-icon {
+  @apply bg-color-secondary inline-block rounded-2xl py-5 px-6;
+}
+.card-title {
+  @apply text-xl font-bold py-4 font-jost;
 }

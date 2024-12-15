@@ -18,7 +18,7 @@
   <body class="bg-color-primary text-color-white">
     <!-- header section start  -->
     <header>
-      <nav class="container flex justify-between items-center">
+      <nav class="container fixed z-50 flex justify-between items-center">
         <div
           class="py-5 text-color-secondary font-bold text-3xl font-lobster tracking-wider"
         >
@@ -42,7 +42,10 @@
           </ul>
         </div>
         <!-- mobile device  -->
-        <div class="lg:hidden cursor-pointer z-50 text-2xl" id="hamburger">
+        <div
+          class="lg:hidden overflow-hidden z-50 cursor-pointer relative text-2xl"
+          id="hamburger"
+        >
           <i class="ri-menu-3-line hamburgerIcon"></i>
         </div>
         <div
@@ -69,16 +72,12 @@
     <main>
       <!-- home section start  -->
       <section id="home" class="relative">
-        <div class="blub bg-color-blob top-5 -left-8"></div>
-        <div class="blub bg-color-secondary bottom-10 right-8"></div>
-        <div class="container py-20">
-          <div class="flex flex-col md:flex-row items-center z-20">
+        <div class="blab bg-color-blob top-5 -left-8"></div>
+        <div class="blab bg-color-secondary bottom-10 right-8"></div>
+        <div class="container py-32 md:py-15">
+          <div class="flex flex-col md:flex-row items-center">
             <div class="text-center md:text-left mb-12 md:w-1/2 md:pr-10">
-              <h1
-                class="text-3xl md:text-5xl font-bold leading-snug font-jost mb-6"
-              >
-                Awesome App For Your Financial
-              </h1>
+              <h1 class="title">Awesome App For Your Financial</h1>
               <p
                 class="leading-relaxed mb-10 font-lobster tracking-widest text-slate-300"
               >
@@ -94,6 +93,54 @@
         </div>
       </section>
       <!-- home section end  -->
+
+      <!-- features section start  -->
+      <section id="features" class="bg-color-primary-light">
+        <div class="container py-20 md:28">
+          <div class="text-center mx-auto mb-20 md:w-1/2">
+            <h4 class="font-bold text-color-secondary mb-4 text-xl md:text-2xl">
+              Our Future
+            </h4>
+            <p class="title">Easy To Manage Your All Payments By Our APP</p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8 px-4"
+          >
+            <!-- card 1  -->
+            <div class="card">
+              <div class="card-icon">
+                <i class="ri-calendar-line text-4xl"></i>
+              </div>
+              <h3 class="card-title">Expense Tracking</h3>
+              <p class="leading-relaxed font-lobster tracking-widest">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+            <!-- card 2 -->
+            <div class="card bg-color-primary-dark">
+              <div class="card-icon">
+                <i class="ri-calendar-line text-4xl"></i>
+              </div>
+              <h3 class="card-title">Finance Snapshot</h3>
+              <p class="leading-relaxed font-lobster tracking-widest">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+              <div class="card-icon">
+                <i class="ri-calendar-line text-4xl"></i>
+              </div>
+              <h3 class="card-title">Support 24/24</h3>
+              <p class="leading-relaxed font-lobster tracking-widest">
+                We use an application designed a testing gnose to keep away
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- features section start end  -->
     </main>
     <!-- main section end  -->
 

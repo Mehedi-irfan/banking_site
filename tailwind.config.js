@@ -3,6 +3,14 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      animation: {
+        moveUp: "1s line-forward",
+        moveUp: {
+          "0%": { "margin-top": "40px", opacity: 0 },
+          "50%": { "margin-top": "20px", opacity: 0.1 },
+          "100%": { "margin-top": "0px", opacity: 1 },
+        },
+      },
       colors: {
         "color-primary": "#01051e",
         "color-primary-light": "#020726",

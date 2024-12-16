@@ -17,8 +17,10 @@
   </head>
   <body class="bg-color-primary text-color-white">
     <!-- header section start  -->
-    <header class="bg-color-primary-dark">
-      <nav class="container z-50 flex justify-between items-center">
+    <header class="relative z-50">
+      <nav
+        class="bg-color-primary-dark px-14 lg:px-20 z-40 flex justify-between items-center fixed top-0 left-0 right-0"
+      >
         <div
           class="py-5 text-color-secondary font-bold text-3xl font-lobster tracking-wider"
         >
@@ -42,12 +44,11 @@
           </ul>
         </div>
         <!-- mobile device  -->
-        <!-- <div>
+        <div class="lg:hidden bg-color-primary-dark">
           <div
             class="lg:hidden overflow-hidden z-50 cursor-pointer relative text-2xl"
-            id="hamburger"
           >
-            <i class="ri-menu-3-line hamburgerIcon"></i>
+            <i class="ri-menu-3-line" id="hamburg"></i>
           </div>
           <div
             id="menu"
@@ -65,7 +66,7 @@
               </li>
             </ul>
           </div>
-        </div> -->
+        </div>
         <!-- mobile device end  -->
       </nav>
     </header>
@@ -122,7 +123,7 @@
             <!-- card 2 -->
             <div class="card bg-color-primary-dark">
               <div class="card-icon">
-                <i class="ri-calendar-line text-4xl"></i>
+                <i class="ri-bar-chart-box-line text-4xl"></i>
               </div>
               <h3 class="card-title">Finance Snapshot</h3>
               <p class="leading-relaxed font-lobster tracking-widest">
@@ -132,7 +133,7 @@
             <!-- card 3 -->
             <div class="card">
               <div class="card-icon">
-                <i class="ri-calendar-line text-4xl"></i>
+                <i class="ri-customer-service-2-line text-4xl"></i>
               </div>
               <h3 class="card-title">Support 24/24</h3>
               <p class="leading-relaxed font-lobster tracking-widest">
@@ -189,7 +190,11 @@
               <div
                 class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200"
               >
-                <p class="text-6xl">1</p>
+                <p
+                  class="text-6xl lg:after:content-[' '] lg:after:absolute lg:after:flex lg:after:bg-[url('../img/line.png')] lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52"
+                >
+                  1
+                </p>
               </div>
               <h3 class="card-title">Install The App</h3>
               <p class="leading-relaxed font-lobster tracking-widest">
@@ -201,7 +206,11 @@
               <div
                 class="relative inline-block px-6 py-3 rounded-lg cursor-pointer bg-color-secondary ease-in duration-200"
               >
-                <p class="text-6xl savingCard-number">2</p>
+                <p
+                  class="text-6xl lg:after:content-[' '] lg:after:absolute lg:after:flex lg:after:bg-[url('../img/line-bottom.png')] lg:after:top-10 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52"
+                >
+                  2
+                </p>
               </div>
               <h3 class="card-title">Setup your Profile</h3>
               <p class="leading-relaxed font-lobster tracking-widest">
@@ -224,6 +233,108 @@
         </div>
       </section>
       <!-- how it works section end -->
+
+      <!-- testimonial section start  -->
+      <section id="testimonial">
+        <div class="container py-20">
+          <div class="text-center mx-auto mb-20 md:w-1/2">
+            <h4 class="font-bold text-color-secondary mb-4 text-xl md:text-2xl">
+              User Review
+            </h4>
+            <p class="title mb-4">What Clients Say About Our App After Use</p>
+          </div>
+
+          <!-- review container  -->
+          <div class="mt-8">
+            <div class="flex items-center justify-center flex-wrap">
+              <img
+                class="user-pic active-pic"
+                onclick="showReview()"
+                src="./img/user1.jpg"
+                alt=""
+              />
+              <img
+                class="user-pic"
+                onclick="showReview()"
+                src="./img/user2.jpg"
+                alt=""
+              />
+              <img
+                class="user-pic"
+                onclick="showReview()"
+                src="./img/user3.jpg"
+                alt=""
+              />
+              <img
+                class="user-pic"
+                onclick="showReview()"
+                src="./img/user4.jpg"
+                alt=""
+              />
+              <img
+                class="user-pic"
+                onclick="showReview()"
+                src="./img/user5.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]"
+            >
+              <div class="user-text font-jost active-text">
+                <p class="md:text-2xl mb-6 font-jost">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  laudantium error, eos maiores deleniti quibusdam
+                  exercitationem tempora repudiandae sunt voluptate?
+                </p>
+                <h4 class="font-bold text-color-secondary mb-1">
+                  Markin Essase
+                </h4>
+                <p>IOS Developer</p>
+              </div>
+              <div class="user-text font-jost">
+                <p class="md:text-2xl mb-6 font-jost">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  laudantium error, eos maiores deleniti quibusdam
+                  exercitationem tempora repudiandae sunt voluptate?
+                </p>
+                <h4 class="font-bold text-color-secondary mb-1">
+                  Kabil Rosing
+                </h4>
+                <p>C++ Developer</p>
+              </div>
+              <div class="user-text font-jost">
+                <p class="md:text-2xl mb-6 font-jost">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  laudantium error, eos maiores deleniti quibusdam
+                  exercitationem tempora repudiandae sunt voluptate?
+                </p>
+                <h4 class="font-bold text-color-secondary mb-1">Zihad Sek</h4>
+                <p>Flutter Developer</p>
+              </div>
+              <div class="user-text font-jost">
+                <p class="md:text-2xl mb-6 font-jost">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  laudantium error, eos maiores deleniti quibusdam
+                  exercitationem tempora repudiandae sunt voluptate?
+                </p>
+                <h4 class="font-bold text-color-secondary mb-1">Abrar Jack</h4>
+                <p>Java Developer</p>
+              </div>
+              <div class="user-text font-jost">
+                <p class="md:text-2xl mb-6 font-jost">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  laudantium error, eos maiores deleniti quibusdam
+                  exercitationem tempora repudiandae sunt voluptate?
+                </p>
+                <h4 class="font-bold text-color-secondary mb-1">Irfan Mark</h4>
+                <p>Python Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial section end -->
     </main>
     <!-- main section end  -->
 

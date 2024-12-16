@@ -25,3 +25,15 @@
 .card-title {
   @apply text-xl font-bold py-4 font-jost;
 }
+.user-pic {
+  @apply h-20 w-20 rounded-full p-1 m-3 cursor-pointer transition-all duration-200 ease-in;
+}
+.user-pic.active-pic {
+  @apply border-solid border-2 border-color-secondary;
+}
+.user-text {
+  @apply hidden;
+}
+.user-text.active-text {
+  @apply block animate-moveUp;
+}

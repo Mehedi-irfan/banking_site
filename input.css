@@ -26,14 +26,28 @@
   @apply text-xl font-bold py-4 font-jost;
 }
 .user-pic {
-  @apply h-20 w-20 rounded-full p-1 m-3 cursor-pointer transition-all duration-200 ease-in;
+  @apply h-20 w-20 rounded-full p-1 m-3 cursor-pointer;
 }
 .user-pic.active-pic {
   @apply border-solid border-2 border-color-secondary;
 }
 .user-text {
-  @apply hidden;
+  display: none;
 }
 .user-text.active-text {
-  @apply block animate-moveUp;
+  display: block;
+}
+.Prcing_card {
+  perspective: 1000px;
+}
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: all 0.4s ease;
+}
+.front {
+  overflow: hidden;
+}
+.card_btn {
+  @apply w-full px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200;
 }

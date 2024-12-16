@@ -23,3 +23,26 @@ function showReview() {
   userPics[i].classList.add("active-pic");
   userTexts[i].classList.add("active-text");
 }
+
+// pricing table
+const toggleButton = document.getElementById("toggleBtn");
+
+const card_1_font = document.getElementById("card_1_front");
+const card_1_back = document.getElementById("card_1_back");
+
+const card_2_font = document.getElementById("card_2_front");
+const card_2_back = document.getElementById("card_2_back");
+
+const card_3_font = document.getElementById("card_3_front");
+const card_3_back = document.getElementById("card_3_back");
+
+toggleButton.addEventListener("change", () => {
+  card_1_font.classList.toggle("-rotate-y-180");
+  card_1_back.classList.toggle("rotate-y-180");
+
+  card_2_font.classList.toggle("-rotate-y-180");
+  card_2_back.classList.toggle("rotate-y-180");
+
+  card_3_font.classList.toggle("-rotate-y-180");
+  card_3_back.classList.toggle("rotate-y-180");
+});

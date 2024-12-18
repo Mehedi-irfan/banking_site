@@ -4,7 +4,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 
 hamburgerBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("hidden");
-  hamburgerBtn.classList.toggle("ri-close-line");
+  hamburgerBtn.classList.toggle("ri-close-large-line");
 });
 
 // testimonial
